@@ -1,7 +1,7 @@
 package com.channelsbot.service;
 
-import com.mafia.client.Platform;
-import com.mafia.model.User;
+import com.channelsbot.client.Platform;
+import com.channelsbot.model.User;
 import org.springframework.stereotype.Service;
 import telegram.Message;
 import telegram.Update;

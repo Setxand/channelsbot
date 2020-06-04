@@ -1,4 +1,4 @@
-package com.channelsbot.exceprion;
+package com.channelsbot.exception;
 
 import lombok.Getter;
 import telegram.Message;

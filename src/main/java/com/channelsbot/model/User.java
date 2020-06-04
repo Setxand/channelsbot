@@ -16,14 +16,12 @@ import javax.persistence.Id;
 public class User {
 
 	public enum UserStatus {
-		ROOM_CONNECTION_STATUS
+
 	}
 
 	@Id
 	private Integer chatId;
 	private String name;
-	private Card card;
-	private String roomId;
 
 	@Enumerated(EnumType.STRING)
 	private UserStatus status;

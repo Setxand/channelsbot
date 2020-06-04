@@ -1,6 +1,6 @@
 package com.channelsbot.controller;
 
-import com.mafia.service.DirectionService;
+import com.channelsbot.service.DirectionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -10,7 +10,8 @@ import telegram.Update;
 @RestController
 public class TelegramController {
 
-	@Autowired DirectionService directionService;
+	@Autowired
+	DirectionService directionService;
 
 	@PostMapping("/webhook")
 	public void webhookEvent(@RequestBody Update update) {
